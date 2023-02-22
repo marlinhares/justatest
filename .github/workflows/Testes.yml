@@ -14,6 +14,6 @@ jobs:
           job_name: "PEN/job/jobtmp2"
           user_name: "seges"
           api_token: "115335ca72df6b9ce80a98853693e9a77b"
-          parameter: '{"urlGitSpe":"value1","database":"value1"}'
+          parameter: "{\"urlGitSpe\":\"value1\"}"
           wait: "true"
           timeout: "1000"
