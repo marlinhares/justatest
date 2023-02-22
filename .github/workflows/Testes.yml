@@ -6,8 +6,6 @@ jobs:
   testJob:
     runs-on: ubuntu-latest
     steps:
-      - name: Waiting
-        run: "sleep 35"
       - name: Trigger jenkins job
         uses: jabbukka/jenkins-trigger@main
         with:
