@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  build:
+  testJob:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger jenkins job

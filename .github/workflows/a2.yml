@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  build:
+  a2job:
     runs-on: ubuntu-latest
     steps:
       - name: Step2.1
