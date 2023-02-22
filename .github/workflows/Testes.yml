@@ -13,5 +13,5 @@ jobs:
           url: "https://esteira.dev.processoeletronico.gov.br"
           job: "PEN/jobtmp2"
           user: "jenkinsadmin"
-          token: "1118a53cb255fda235c51c37dae46041eb"
+          tokens: "1118a53cb255fda235c51c37dae46041eb"
           
