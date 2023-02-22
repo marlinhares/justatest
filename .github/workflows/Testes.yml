@@ -7,11 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger jenkins job
-        uses: jabbukka/jenkins-trigger@main
+        uses: appleboy/jenkins-action@master
         with:
           url: "esteira.dev.processoeletronico.gov.br"
-          job_name: "PEN/jobtmp1"
-          user_name: "seges"
-          api_token: "115335ca72df6b9ce80a98853693e9a77b"
-          wait: "true"
-          timeout: "1000"
+          job: "PEN/jobtmp1"
+          user: "seges"
+          token: "115335ca72df6b9ce80a98853693e9a77b"
+          
