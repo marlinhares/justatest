@@ -19,4 +19,4 @@ jobs:
           parameters: '{"database": "sqlserver", "urlGitSpe": "value1"}'
           #timeout: "40"
           #start_timeout: "40"
-          interval: "10"
+          interval: "12"
