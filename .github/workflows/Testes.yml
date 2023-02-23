@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger jenkins job
-        uses: marlinhares/jenkins-githubaction/nova@tmp
+        uses: marlinhares/jenkins-githubaction@master
         with:
           url: ${{ secrets.JENKINS_URL }}
           job_name: "PEN/jobtmp2"
