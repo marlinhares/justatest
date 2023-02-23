@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger jenkins job
-        uses: marlinhares/jenkins-githubaction@master
+        uses: supergovbr/super-cicd/docker/jenkins-githubaction@main
         with:
           url: ${{ secrets.JENKINS_URL }}
           job_name: "PEN/jobtmp2"
@@ -17,3 +17,4 @@ jobs:
           parameters: '{"database": "sqlserver", "urlGitSpe": "value1"}'
           #timeout: "40"
           #start_timeout: "40"
+          interval: "10"
