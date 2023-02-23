@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger jenkins job
-        uses: GoldenspearLLC/build-jenkins-job@master
+        uses: joshlk/jenkins-githubaction@master
         with:
-          jenkins-url: "https://esteira.dev.processoeletronico.gov.br"
-          job-path: "PEN/job/jobtmp2"
-          user: "seges"
-          jenkins-token: "115335ca72df6b9ce80a98853693e9a77b"
-          job-params: '{"database": "sqlserver", "urlGitSpe": "value1"}'
+          url: "https://esteira.dev.processoeletronico.gov.br"
+          job_name: "PEN/job/jobtmp2"
+          username: "seges"
+          api_token: "115335ca72df6b9ce80a98853693e9a77b"
+          parameters: '{"database": "sqlserver", "urlGitSpe": "value1"}'
       - name: Get job status
-        run: echo "Job status is ${{ steps.job-build.outputs.job_status }}"
+        run: echo "Job status is ${{ steps.job-build.outputs.build_url }}"
