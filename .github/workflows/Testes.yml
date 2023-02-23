@@ -16,6 +16,6 @@ jobs:
           api_token: "115335ca72df6b9ce80a98853693e9a77b"
           parameters: '{"database": "sqlserver", "urlGitSpe": "value1"}'
           timeout: "40"
-          start_timeout: "10"
+          start_timeout: "40"
       - name: Get job status
         run: echo "Job status is ${{ steps.job-build.outputs.build_url }}"
