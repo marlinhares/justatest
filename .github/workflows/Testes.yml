@@ -11,7 +11,7 @@ jobs:
         uses: joshlk/jenkins-githubaction@master
         with:
           url: "https://esteira.dev.processoeletronico.gov.br"
-          job_name: "job/PEN/job/jobtmp2"
+          job_name: "PEN/jobtmp2"
           username: "seges"
           api_token: "115335ca72df6b9ce80a98853693e9a77b"
           parameters: '{"database": "sqlserver", "urlGitSpe": "value1"}'
