@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger jenkins job
-        uses: joshlk/jenkins-githubaction@master
+        uses: marlinhares/jenkins-githubaction@master
         with:
           url: "https://esteira.dev.processoeletronico.gov.br"
           job_name: "PEN/jobtmp2"
