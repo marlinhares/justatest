@@ -1,10 +1,10 @@
-name: Avisar-Testes
+name: Aviso-Testes
 on:
   pull_request:
       branches: [ master ]
   workflow_dispatch:
 jobs:
-  AvisarTestes:
+  Verifique-Aviso:
     runs-on: ubuntu-latest
     steps:
       - name: Aviso-Testes
