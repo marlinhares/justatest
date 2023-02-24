@@ -25,7 +25,7 @@ pipeline {
                     
                     sh """
                     echo "Iniciando"
-                    sleep 5
+                    sleep 10
                     echo "Terminei"
                     echo "${DATABASE}"
                     echo "${GITURL}"
