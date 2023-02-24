@@ -1,7 +1,10 @@
 pipeline {
     agent any 
     parameters{
-        
+    	string(
+    	      name: 'sha1',
+    	      defaultValue:"master",
+    	      description: "commit id ou refname (eg: origin/pr/9/head)")
         choice(
             name: 'database',
             choices: "mysql\noracle\nsqlserver",
