@@ -1,0 +1,16 @@
+name: Aviso-Testes
+on:
+  pull_request:
+      branches: [ master ]
+  workflow_dispatch:
+jobs:
+  Verifique-Aviso:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Aviso-Testes
+        run: |
+          echo "Um webhook deverá ser acionado automaticamente para rodar os testes"
+          echo "na esteira de testes."
+          echo ""
+          echo "Quando isso acontecer, um check de testes deverá ser adicionado automaticamente a esse PR"
+          echo "Verifique se os testes rodaram com sucesso antes de fazer o merge"

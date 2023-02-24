@@ -4,7 +4,7 @@ pipeline {
     	string(
     	      name: 'sha1',
     	      defaultValue:"master",
-    	      description: "commit id ou refname (eg: origin/pr/9/head)")
+    	      description: "commit id ou refname (eg: origin/pr/9/head) desse repositorio. Obrigatorio que esse parametro tenha o nome sha1 por conta do plugin GHPRB")
         choice(
             name: 'database',
             choices: "mysql\noracle\nsqlserver",
@@ -25,7 +25,7 @@ pipeline {
                     
                     sh """
                     echo "Iniciando"
-                    sleep 20
+                    sleep 10
                     echo "Terminei"
                     echo "${DATABASE}"
                     echo "${GITURL}"
