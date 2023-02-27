@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger
-        uses: /docker/Dockerfile
+        uses: docker/checkout@v2
         with:
           url: ${{ secrets.JENKINS_URL }}
           job_name: "PEN/jobtmp2"
