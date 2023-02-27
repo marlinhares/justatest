@@ -1,6 +1,6 @@
 from busybox
 
-ARG JENKINS_URL=teste
-ENV TESTE=$JENKINS_URL
+ARG NOVO=teste
+ENV TESTE=$NOVO
 
 CMD sh -c "echo AAA; env"
