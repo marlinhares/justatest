@@ -14,8 +14,6 @@ jobs:
       - name: Trigger2
         uses: ./docker
         with:
-          build-args: |
-            NOVO=${{ secrets.JENKINS_URL }}
+          args: |
+            NOVO=ola
             ARG2=bar
-          url: "asdf"
-          
