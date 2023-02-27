@@ -3,4 +3,4 @@ from busybox
 ARG JENKINS_URL=teste
 ENV TESTE=$JENKINS_URL
 
-CMD ["echo 'here igo'", "env"]
+CMD sh -c "echo AAA; env"
