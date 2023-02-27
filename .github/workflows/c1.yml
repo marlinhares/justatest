@@ -12,11 +12,4 @@ jobs:
       - name: Trigger2
         uses: ./docker
         with:
-          url: ${{ secrets.JENKINS_URL }}
-          job_name: "PEN/jobtmp2"
-          username: ${{ secrets.JENKINS_USER }}
-          api_token: ${{ secrets.JENKINS_TOKEN }}
-          parameters: '{"database": "sqlserver", "urlGitSpe": "value1"}'
-          #timeout: "40"
-          #start_timeout: "40"
-          interval: "12"
+          url: "asdf"
