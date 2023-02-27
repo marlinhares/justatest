@@ -14,6 +14,6 @@ jobs:
       - name: Trigger2
         uses: ./docker
         with:
-          args: |
+          build-args: |
             NOVO=ola
             ARG2=bar
