@@ -1,0 +1,20 @@
+name: c1
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+jobs:
+  testJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger
+        uses: docker
+        with:
+          url: ${{ secrets.JENKINS_URL }}
+          job_name: "PEN/jobtmp2"
+          username: ${{ secrets.JENKINS_USER }}
+          api_token: ${{ secrets.JENKINS_TOKEN }}
+          parameters: '{"database": "sqlserver", "urlGitSpe": "value1"}'
+          #timeout: "40"
+          #start_timeout: "40"
+          interval: "12"
