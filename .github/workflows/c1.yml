@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger1
-        uses: action/checkout
+        uses: actions/checkout
       - name: Trigger2
         uses: ./docker
         with:
