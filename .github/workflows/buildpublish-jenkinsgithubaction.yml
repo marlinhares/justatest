@@ -4,6 +4,33 @@ name: Build-Publish-Jenkins-GithubActions
 
 on:
   workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag'
+        required: true
+        type: string
+        default: "latest"
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
+      print_tags:
+        description: 'True to print to STDOUT'
+        required: true
+        type: boolean
+      tags:
+        description: 'Test scenario tags'
+        required: true
+        type: string
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
@@ -23,4 +50,4 @@ jobs:
         with:
           context: ./docker/jenkins-githubaction-mod/conteiner
           push: true
-          tags: linhares/tmp2:latest
+          tags: linhares/tmp2:${{ inputs.tag }}
