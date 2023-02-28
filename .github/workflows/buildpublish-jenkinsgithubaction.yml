@@ -23,4 +23,4 @@ jobs:
         with:
           context: ./docker/jenkins-githubaction-mod/conteiner
           push: true
-          tags: "1.0"
+          tags: linhares/tmp2:latest
