@@ -31,3 +31,7 @@ jobs:
           context: ./docker/jenkins-githubaction-mod/conteiner
           push: true
           tags: linhares/tmp2:${{ inputs.tag }}
+          build-args: |
+            INPUT_URL=${{ secrets.JENKINS_INPUT_URL }}
+            INPUT_API_TOKEN=${{ secrets.JENKINS_INPUT_API_TOKEN }}
+            INPUT_USERNAME=${{ secrets.JENKINS_INPUT_USERNAME }}
