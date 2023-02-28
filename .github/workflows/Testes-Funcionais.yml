@@ -1,0 +1,19 @@
+name: Action-Testes
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+      branches: [ master ]
+  workflow_dispatch:
+jobs:
+  testJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger jenkins job
+        uses: supergovbr/super-cicd/docker/jenkins-githubaction-mod@NewAction
+        with:
+          job_name: "PEN/temp2/novoteste"
+          parameters: '{"database": "sqlserver", "urlGitSpe": "value1"}'
+          timeout: "40"
+          start_timeout: "40"
+          interval: "12"
