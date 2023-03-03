@@ -1,9 +1,9 @@
 name: Action-Testes
 on:
   push:
-    branches: [ master ]
+    branches: [ masterS ]
   pull_request:
-      branches: [ master ]
+      branches: [ masterS ]
   workflow_dispatch:
 jobs:
   testJob:

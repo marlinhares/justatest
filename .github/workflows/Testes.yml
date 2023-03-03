@@ -1,7 +1,7 @@
 name: Aviso-Testes
 on:
   pull_request:
-      branches: [ master ]
+      branches: [ masterS ]
   workflow_dispatch:
 jobs:
   Verifique-Aviso:
