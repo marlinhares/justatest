@@ -1,23 +1,26 @@
-name: Matrix-Asset
+name: 'Hello World'
+description: 'Greet someone'
+inputs:
+  versao:
+    description: 'Define env name'     
+    required: true
+    default: 'prod'
+  tipo:
+    description: 'Define env name'     
+    required: true
+    default: 'tipo'
+outputs:
+  random-number:
+    description: "Random number"
+    value: ${{ steps.random-number-generator.outputs.random-number }}
+runs:
+  using: "composite"
+  steps:
 
-on:
-  workflow_dispatch:
-    inputs:
-      versao:
-        description: 'Define env name'     
-        required: true
-        default: 'prod'
-      tipo:
-        description: 'Define env name'     
-        required: true
-        default: 'tipo'
-
-jobs:
-  example_matrix-asset:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: passo1
-        run: |
-          echo "${{ inputs.versao }}"
-          echo "${{ inputs.tipo }}"
+    - id: random-number-generator
+      run: echo "random-number=$(echo $RANDOM)" >> $GITHUB_OUTPUT
+      shell: bash
+    - name: passo1
+      run: |
+        echo "${{ inputs.versao }}"
+        echo "${{ inputs.tipo }}"
