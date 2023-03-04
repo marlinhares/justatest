@@ -5,4 +5,4 @@ on:
 
 jobs:
   call-workflow-in-local-repo:
-    uses: ./.github/workflows/workflow-2.yml
+    uses: ./.github/workflows/Testes.yml
