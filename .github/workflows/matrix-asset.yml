@@ -7,3 +7,5 @@ on:
 jobs:
   call-workflow-in-local-repo:
     uses: ./.github/workflows/Testes.yml
+    with:
+      par1: "adf"
