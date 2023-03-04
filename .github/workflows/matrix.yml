@@ -12,5 +12,5 @@ jobs:
         typ: ['db1', 'db2'] 
     steps:
       - run: |
-        echo ${{ matrix.version }}
-        echo ${{ matrix.typ }}     
+        echo "${{ matrix.version }}"
+        echo "${{ matrix.typ }}"
