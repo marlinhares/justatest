@@ -11,7 +11,11 @@ jobs:
         version: [10, 12, 14, 16, 20]
         typ: ['db1', 'db2'] 
     steps:
-      - name: passo1
+      - uses: ./.github/workflows/matrix-asset.yml
+        with:
+          - versao: "${{ matrix.version }}"
+          - tipo: "${{ matrix.typ }}"
+      - name: passo2
         run: |
           echo "${{ matrix.version }}"
           echo "${{ matrix.typ }}"
