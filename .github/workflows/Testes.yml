@@ -3,6 +3,7 @@ on:
   pull_request:
       branches: [ masterS ]
   workflow_dispatch:
+  workflow_call:
 jobs:
   Verifique-Aviso:
     runs-on: ubuntu-latest
