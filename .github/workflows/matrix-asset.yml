@@ -1,0 +1,23 @@
+name: Matrix-Asset
+
+on:
+  workflow_dispatch:
+    inputs:
+      versao:
+        description: 'Define env name'     
+        required: true
+        default: 'prod'
+      tipo:
+        description: 'Define env name'     
+        required: true
+        default: 'tipo'
+
+jobs:
+  example_matrix-asset:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: passo1
+        run: |
+          echo "${{ inputs.versao }}"
+          echo "${{ inputs.tipo }}"
