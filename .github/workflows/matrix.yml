@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: ./.github/workflows/matrix-asset.yml
         with:
-          - versao: "${{ matrix.version }}"
-          - tipo: "${{ matrix.typ }}"
+          versao: "${{ matrix.version }}"
+          tipo: "${{ matrix.typ }}"
       - name: passo2
         run: |
           echo "${{ matrix.version }}"
