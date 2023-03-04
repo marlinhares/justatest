@@ -1,8 +1,8 @@
-name: Matrix
+name: Matrix-assts
 
 on:
   workflow_dispatch:
 
 jobs:
   call-workflow-in-local-repo:
-      uses: ./.github/workflows/workflow-2.yml
+    uses: ./.github/workflows/workflow-2.yml
